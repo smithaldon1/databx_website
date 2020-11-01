@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DataBx Analytic Services</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">        	
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <style>
+            p {
+                width: 44em;
+                font-family: 'Open Sans';
+                font-size: 1em;
+                color: #223995;
+                margin: 0 4em;
+            }
+            h1 {
+                font-family: 'Open Sans';
+                font-size: 3.125em;
+                font-weight: bold;
+                color: white;
+            }
+            h2 {
+                font-family: 'Open Sans';
+                font-size: 1.5625em;
+                font-weight: bold;
+                color: white;
+            }
+            h3 {
+                font-family: 'Open Sans';
+                font-size: 1.875em;
+                font-weight: 600;
+                color: #223995;
+            }
+            .submit-button {
+                background-color: #223995;
+                color: white;
+                border: none;
+                box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.08),
+                            -4px -4px 5px 4px rgba(255, 255, 255, 0.56);
+                transition: 0.3s;
+            }
+            .submit-button:hover {
+                background-color: white;
+                color: #223995;
+            }
+            .submit-pressed {
+                background-color: white;
+                color: #223995;
+                box-shadow: inset 3px 5px 5px 1px rgba(0, 0, 0, 0.08),
+                            inset -4px -4px 5px 2px rgba(255, 255, 255, 0.56);
+            }
+            .form {
+                font-family: 'Open Sans';
+                font-size: 1.5625em;
+                color: #223995;
+            }
+            .input {
+                font-size: 1em;
+                font-weight: 300;
+                color: #223995;
+                width: 30em;
+                box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.08),
+                            -2px -2px 5px 7px rgba(255, 255, 255, 0.56);
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- This is the code that defines your header with your logo. -->
+        <nav class="navbar navbar-dark sticky-top" style="background-color: #223995;">
+            <a class="navbar-brand" href="#">
+                <!-- I will give you the logo file that you will want to put on your host server in the same folder as this code -->
+                <img src="DataBxLogo.png" width="auto" height="100" class="d-inline-block align-center my-2" alt="DataBx Logo">
+
+                <h1 class="d-inline-block align-middle mx-1" id="title">DataBx</h1>
+                <h2 class="d-inline-block align-middle m-1" id="small-title">Analytical Services</h3>
+            </a>
+        </nav>
+
+        <!-- Body text starts -->
+        <div class="container align-center">
+            <div class="row justify-content-center" style="margin-top: 5em; margin-bottom: 1em;">
+                <h3>What do we do…</h3>
+            </div>
+            <div class="row justify-content-center my-2">
+                <p>DataBx works with small CPG firms to transform Excel Sheets into Meaningful Visualizations.</p>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <p>Excel is great for analysis but visualizations are best for summarizing data and often the smaller firms don't have the resources to construct these visualizaions.</p>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <p>We'll take your Excel sheets containing data from KeHe, UNFI, SPINS, or WholeFoods and transorm them into actionable visuals.</p>
+            </div>
+            <div class="container align-center row justify-content-center">
+                <h3 style="font-style: italic; margin-top: 2.25em; margin-bottom: 1em;">Ask a question?</h3>
+            </div>
+            <div class="container align-center row justify-content-center">
+
+                <!-- Form starts -->
+                <form target="_blank" action="https://formsubmit.co/info@databx.com" method="POST" enctype=”multipart/form-data” name="contactform">
+                    <div class="form-group">
+                        <label style="font-size: 1.25em;" for="form_name" name="name" class="form">Name</label>
+                        <input type="text" id="form_name" class="form-control input" placeholder="Please enter your full name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: 1.25em;" for="form_email" class="form">Email</label>
+                        <input style="font-size: 1em;" type="email" id="form_email" name="email" class="form-control input" placeholder="Please enter your email" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: 1.25em;" for="form_message" class="form">Message</label>
+                        <textarea type="text" rows="5" id="form_message" class="form-control input" name="message" placeholder="What would you like to say?" required="required"></textarea>
+                    </div>
+                    <button id="submit-button" type="submit" style="margin-left: 11em; margin-bottom: 5em; margin-top: 2em; height: auto; width: 7em;" class="btn submit-button">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        <footer class="container align-center row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7">
+                <p style="font-size: 0.875em; margin-bottom: 2em;" class="d-inline-block align-left">DataBx  PO Box 77  Boston, MA  02110 Copyright © 2017  |  <a style="color: #223995;" href=mailto:info@databx.com><u>Info@DataBx.Com</u></a> |  617.701.0227</p>
+            </div>
+            <div class="col-lg-3">
+                <p style="font-style: italic; font-size: 0.875em; margin-bottom: 2em; margin-left: 10em;" class="d-inline-block justify-align-right">Developed by <a target="_blank" style="color: #223995;" href="https://smithbros.dev/"><u>Smith Brothers Development, LLC</u></a></p>
+            </div>
+            <div class="col-lg-1"></div>
+        </footer>
+        <script>
+            var button = document.getElementById("submit-button")
+            
+            button.addEventListener("mousedown", mouseDown);
+            button.addEventListener("mouseup", mouseUp);
+
+            function mouseDown() {
+                button.classList.toggle("submit-pressed");
+            };
+
+            function mouseUp() {
+                button.classList.toggle("submit-pressed");
+            };
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    </body>
+</html>
